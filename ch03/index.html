@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            box-sizing: border-box;
+            --primary-color: #0072b0;
+            --secondary-color: #FFFFFF;
+            --default-padding: .5rem .8rem;
+            --border-radius: .5em;
+        }
+
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eee;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 0.875em;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: var(--default-padding);
+        }
+
+        .header>h1 {
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.714rem;
+        }
+
+        .content {
+            padding-top: 1rem;
+            display: flex;
+            border-spacing: 1.5rem 0;
+
+        }
+
+        main {
+            display: block;
+        }
+
+        .main {
+            width: 70%;
+            background-color: var(--secondary-color);
+            border-radius: var(--border-radius);
+            padding: var(--default-padding);
+        }
+
+        .aside {
+            padding: 1.5em;
+            width: calc(30% - 1.5em);
+            margin-left: 1.5em;
+            background-color: var(--secondary-color);
+            border-radius: var(--border-radius);
+        }
+
+        .btn {
+            cursor: pointer;
+            display: block;
+            text-transform: uppercase;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            padding: .5em;
+        }
+
+        a.link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            Franklin Running Club
+        </h1>
+    </div>
+    <div class="content">
+        <main class="main">
+            <h2>Come join us!</h2>
+            <p>
+                The Franklin Running club meets at 6:00pm every Thursday
+                at the town square. Runs are three to five miles, at your
+                own pace.
+            </p>
+        </main>
+        <aside class="aside">
+            <div class="widget">
+                <a class="btn">follow us on twitter</a>
+                <a class="btn">follow us on facebook</a>
+            </div>
+            <div class="widget">
+                <a class="link" href="/sponsor">become a sponsor</a>
+            </div>
+        </aside>
+    </div>
+
+</body>
+
+</html>
